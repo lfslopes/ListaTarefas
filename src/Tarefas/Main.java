@@ -9,7 +9,7 @@ public class Main {
 
         ListaTarefas listaTarefas = new ListaTarefas(tarefaManha, tarefaTarde, tarefaNoite, tarefaNoite2);
 
-        System.out.println("Numero de Tarefas: " + listaTarefas.obterNumeroTotalTarefas());
+        System.out.println("Numero inicial de Tarefas: " + listaTarefas.obterNumeroTotalTarefas());
 
         Tarefa tarefaSemana = new Tarefa("lavar a roupa e limpar a casa");
         listaTarefas.adicionarTarefa(tarefaSemana.getDescricao());
