@@ -20,7 +20,7 @@ public class Main {
 
         listaTarefas.removerTarefa("Arrumar o quarto");
 
-        System.out.println("#############################################################");
+        System.out.println("##############################################################");
         System.out.println("Lista de Tarefas: ");
         listaTarefas.obterDescricoesTarefas().forEach(System.out::println);
         System.out.println("Numero de Tarefas: " + listaTarefas.obterNumeroTotalTarefas());
