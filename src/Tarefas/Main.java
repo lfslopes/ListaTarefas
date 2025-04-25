@@ -5,8 +5,9 @@ public class Main {
         Tarefa tarefaManha = new Tarefa("Tirar o lixo");
         Tarefa tarefaTarde = new Tarefa("lavar a louça");
         Tarefa tarefaNoite = new Tarefa("Arrumar o quarto");
+        Tarefa tarefaNoite2 = new Tarefa("arrumar o quarto");
 
-        ListaTarefas listaTarefas = new ListaTarefas(tarefaManha, tarefaTarde, tarefaNoite);
+        ListaTarefas listaTarefas = new ListaTarefas(tarefaManha, tarefaTarde, tarefaNoite, tarefaNoite2);
 
         System.out.println("Numero de Tarefas: " + listaTarefas.obterNumeroTotalTarefas());
 
@@ -17,7 +18,7 @@ public class Main {
         listaTarefas.obterDescricoesTarefas().forEach(System.out::println);
         System.out.println("Numero de Tarefas: " + listaTarefas.obterNumeroTotalTarefas());
 
-        listaTarefas.removerTarefa("Tirar o lixo");
+        listaTarefas.removerTarefa("Arrumar o quarto");
 
         System.out.println("#############################################################");
         System.out.println("Lista de Tarefas: ");

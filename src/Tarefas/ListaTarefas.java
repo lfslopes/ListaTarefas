@@ -8,6 +8,8 @@ import java.util.stream.Collectors;
 public class ListaTarefas {
     private List<Tarefa> listatarefas = new ArrayList<>();
 
+    public ListaTarefas() {
+    }
     public ListaTarefas (Tarefa... tarefa) {
         listatarefas.addAll(Arrays.asList(tarefa));
     }
@@ -19,12 +21,16 @@ public class ListaTarefas {
         this.listatarefas.add(new Tarefa(descricao));
     }
     public void removerTarefa(String descricao) {
+        if (this.listatarefas.isEmpty()) {
+            System.out.println("Lista vazia");
+            return;
+        }
         int index = 0;
         while (index < this.listatarefas.size()) {
-            if (this.listatarefas.get(index).getDescricao().equals(descricao)) {
+            if (this.listatarefas.get(index).getDescricao().equalsIgnoreCase(descricao)) {
                 this.listatarefas.remove(index);
-            }
-            index++;
+            } else
+                index++;
         }
     }
     public int obterNumeroTotalTarefas() {
