@@ -1,4 +1,5 @@
-package Tarefas;
+import Tarefas.ListaTarefas;
+import Tarefas.Tarefa;
 
 public class Main {
     public static void main(String[] args) {
